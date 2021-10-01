@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="370.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.loginController">
+   <children>
+      <BorderPane layoutX="5.0" prefHeight="64.0" prefWidth="350.0" style="-fx-background-color: #eaeaea;">
+         <center>
+            <Label alignment="CENTER" prefWidth="215" text="도서관에 오신것을 환영합니다" />
+         </center>
+      </BorderPane>
+      <AnchorPane layoutY="66.0" prefHeight="450.0" prefWidth="370.0" style="-fx-background-color: #8fbc8f;">
+         <children>
+            <Button fx:id="btnLogin" layoutX="19.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleBtnLogin" prefHeight="53.0" prefWidth="153.0" text="앉고자하는좌석 선택" />
+            <Button fx:id="exit" layoutX="254.0" layoutY="337.0" mnemonicParsing="false" onAction="#exit" prefHeight="54.0" prefWidth="76.0" text="종료" />
+            <TextField fx:id="currenttime" editable="false" layoutX="133.0" layoutY="60.0" prefHeight="34.0" prefWidth="183.0" />
+            <TextField alignment="CENTER" editable="false" layoutX="184.0" layoutY="27.0" prefHeight="23.0" prefWidth="80.0" style="-fx-background-color: FFFF99;" text="현재시간" />
+            <ImageView fitHeight="167.0" fitWidth="277.0" layoutX="60.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@도서관.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="19.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@시계.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
